@@ -1,0 +1,12 @@
+# see: https://taskfile.dev
+# Для автоматической генерации прото файлов, запуск: task generate
+
+version: "3" # Версия
+
+tasks: # Список команд которые утилита будет делать
+  generate: #Утилита generate
+    aliases:
+      - gen
+    desc: "Generate code from proto files"
+    cmds:
+      - protoc -I proto  proto/sso/sso.proto --go_out=./gen/go --go_opt=paths=source_relative --go-grpc_out=./gen/go --go-grpc_opt=paths=source_relative
