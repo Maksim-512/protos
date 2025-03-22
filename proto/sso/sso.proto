@@ -56,5 +56,5 @@ message IsAdminResponse {
 //
 
 // чтобы подключить в нашем проекте (sso) протофайлы:
-//sso go get (ссылка данного проекта proto на гитхаб)
-// sso go get
+// go get (ссылка данного проекта proto на гитхаб)
+// go get github.com/Maksim-512/protos
